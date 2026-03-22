@@ -12,6 +12,20 @@ This repository contains an improved version of the test script for the Agent Re
 - **Environment variable support**: Uses the BROKER_PORT environment variable if set
 - **Error handling**: Provides clear error messages if the server fails to start or if API requests fail
 
+## Port Configuration
+
+The Agent Representation Broker test script uses port 5002 by default. You can configure the port in several ways:
+
+1. **Default port**: The script will use port 5002 if no other configuration is provided.
+
+2. **Environment variable**: Set the `BROKER_PORT` environment variable to specify a different port:
+   ```bash
+   export BROKER_PORT=5003
+   python test_api.py
+   ```
+
+3. **Automatic port selection**: If the default port is in use, the script will automatically find an available port and update the `BASE_URL` accordingly.
+
 ## Usage
 
 1. **Install dependencies**:
@@ -25,7 +39,7 @@ This repository contains an improved version of the test script for the Agent Re
    ```
 
 3. **Set the port (optional)**:
-   You can set the BROKER_PORT environment variable to specify a different port:
+   You can set the `BROKER_PORT` environment variable to specify a different port:
    ```bash
    export BROKER_PORT=5003
    python test_api.py
