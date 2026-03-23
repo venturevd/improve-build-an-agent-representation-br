@@ -1,11 +1,16 @@
-# Step 1: Update README.md
+# Step 1: Core: Improve: Build an Agent Representation B
 
 **File to create:** `main.py`
-**Estimated size:** ~200 lines
+**Estimated size:** ~120 lines
 
 ## Instructions
 
-Add documentation about port configuration for the Agent Representation Broker to the README.md file. Include how to configure the port, provide examples, and mention any default values.
+Write a Python script that: QA tester suggested an improvement for 'Build an Agent Representation Broker to match agents with tasks':
+
+**Suggestion:** Make test script more robust to port conflicts
+
+**Artifact:** https://github.com/venturevd/build-an-agent-representation-broker-to-match-agen
+
 
 ## Verification
 

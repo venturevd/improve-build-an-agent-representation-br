@@ -7,6 +7,7 @@ import json
 import time
 import socket
 import subprocess
+import os
 
 # Base URL for the API
 BASE_URL = "http://127.0.0.1:5002"
@@ -38,7 +39,7 @@ def test_api():
     print("Starting server...")
     env = os.environ.copy()
     env["BROKER_PORT"] = str(port)
-    server_process = subprocess.Popen(["python3", "-m", "server"], env=env)
+    server_process = subprocess.Popen(["/usr/bin/python3", "server.py"], env=env)
 
     # Wait for server to start
     time.sleep(2)
